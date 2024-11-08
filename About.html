@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About KShoes</title>
+    <link rel="icon" type="image/x-icon" href="images/iconlogo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="fontawesome-free-6.6.0-web/js/all.js"></script>
+    <style>
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+        }
+
+        .navbar {
+            background-color: #003366; /* Dark blue background for navbar */
+        }
+
+        .navbar-brand {
+            color: white; /* White text for the brand */
+            display: flex;
+            align-items: center; /* Center align items in the navbar */
+        }
+
+        .navbar-nav .nav-link {
+            color: white; /* White text for nav links */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+
+        .gradient-bg {
+            margin-top: 20px; /* Space above content */
+        }
+
+        h1, h2 {
+            color: #003366; /* Dark navy color for headings */
+        }
+
+        p {
+            color: #333; /* Dark gray for better readability */
+            font-weight: normal; /* Normal weight for paragraph text */
+        }
+
+        .carousel-inner {
+            height: 400px; /* Set height for carousel */
+        }
+
+        .carousel-item img {
+            width: 100%; /* Full width for rectangular effect */
+            height: 100%; /* Set height for circular effect */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 10px; /* Slightly rounded corners */
+        }
+
+        .carousel-caption {
+            position: absolute; /* Position relative to carousel */
+            bottom: 20%; /* Position from the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust position to center */
+            text-align: center; /* Center align the caption */
+        }
+
+        .price-tag {
+            font-size: 1.5rem; /* Larger size for better visibility */
+            color: #FFD700; /* Gold color for price tags */
+            font-weight: bold; /* Make the price bold */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px; /* Padding for the price tag */
+            border-radius: 5px; /* Slightly rounded corners */
+            margin-top: 10px; /* Space above price */
+        }
+
+        .more-details {
+            margin-top: 30px; /* Space above buttons */
+            text-align: center; /* Center align buttons */
+        }
+
+        .btn-custom {
+            background-color: #0056b3; /* Custom button color */
+            color: white;
+            margin: 5px; /* Spacing between buttons */
+        }
+
+        .footer {
+            background-color: #4a4a4a; /* Updated footer background color */
+            color: white; /* White text for footer */
+            padding: 20px; /* Padding for footer */
+            text-align: center; /* Center align footer text */
+            margin-top: 20px; /* Space above footer */
+        }
+
+        .footer a {
+            color: #FFD700; /* Gold color for footer links */
+        }
+
+        .footer h6 {
+            color: #FFFFFF; /* White text for h6 in footer */
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="Profile.html">
+            <img src="images/iconlogo.jpg" alt="Logo" class="logo" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+            KShoes
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container gradient-bg">
+    <div class="row m-5 py-5">
+        <div class="col-md-6">
+            <h1>What is KSHOES?</h1>
+            <p>
+                KShoes is your premier destination for stylish and comfortable footwear. From running shoes to casual sneakers, we have a wide selection for every occasion. Our goal is to provide quality shoes that elevate your style and comfort, making every step a pleasure.
+            </p>
+            <p>
+                We believe that the right pair of shoes can transform your look and boost your confidence. Our team is dedicated to curating the best styles and ensuring customer satisfaction with every purchase. Explore our diverse range of products and find the perfect fit for your lifestyle.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/A1.jpg" class="d-block w-100" alt="Stylish Sneakers">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><b>Stylish Sneakers</b></h5>
+                            <p class="price-tag">$59.99</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/A2.jpg" class="d-block w-100" alt="Running Shoes">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><b>Running Shoes</b></h5>
+                            <p class="price-tag">$79.99</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/A3.jpg" class="d-block w-100" alt="Formal Shoes">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><b>Formal Shoes</b></h5>
+                            <p class="price-tag">$99.99</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="more-details col-md-12">
+            <a href="Home.html" class="btn btn-custom">More Details</a>
+            <a href="Gallery.html" class="btn btn-custom">View Our Gallery</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 KShoes. All Rights Reserved.</p>
+        <h6>Copyright <b>IT2F Property</b> ALL Rights Reserved</h6>
+        <p>Designed by <a href="https://www.facebook.com/" class="text-decoration-none">Wilfredo O. Piloton Jr</a></p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
